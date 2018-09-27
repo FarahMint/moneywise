@@ -11,10 +11,10 @@ img {
   min-height: 100%;
 }
 .heading {
-  width: 30%;
+  width: 50%;
   /* margin: 0 auto; */
   position: relative;
-  bottom: 3rem;
+  bottom: 2rem;
 }
 .footer {
   height: 40px;
