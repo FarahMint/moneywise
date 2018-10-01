@@ -30,14 +30,6 @@ document
 
 // Caluclate results
 calculateResults = function(event) {
-  // // UI VARS
-  // const UIamount = document.querySelector("#amount");
-  // const UIinterest = document.querySelector("#interest");
-  // const UIyears = document.querySelector("#years");
-  // const UImonthlyPayment = document.querySelector("#monthly-payment");
-  // const UItotalPayment = document.querySelector("#total-payment");
-  // const UItotalInterest = document.querySelector("#total-interest");
-
   // formula
   //  turn as decimal
   const principal = parseFloat(UIamount.value);
@@ -69,8 +61,6 @@ calculateResults = function(event) {
     showError("Please check your numbers");
     // console.log("Please check your numbers");
   }
-
-  // event.preventDefault();
 };
 
 //Show Error
@@ -82,11 +72,11 @@ const showError = function(error) {
   // create a div
   const errorDiv = document.createElement("div");
   // Get elememts
-  // const UIcard = document.querySelector(".card");
-  // const UIheading = document.querySelector(".heading");
+  const UIcard = document.querySelector(".card");
+  const UIheading = document.querySelector(".heading");
 
   // Add class  error & (bootstrap class danger)
-  errorDiv.classrates = "alert alert-danger";
+  errorDiv.classList.add("alert-danger");
 
   // Create text node and append to div
   errorDiv.appendChild(document.createTextNode(error));
@@ -96,12 +86,12 @@ const showError = function(error) {
   UIcard.insertBefore(errorDiv, UIheading);
 
   // clear error after 3 sec
-  setTimeout(clearError, 2000);
+  setTimeout(clearError, 3000);
 };
 
 // Clear error function
 const clearError = function() {
-  document.querySelector(".alert").remove();
+  document.querySelector(".alert-danger").remove();
 };
 
 // Show display
