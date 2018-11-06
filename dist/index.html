@@ -24,79 +24,131 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="bg-primary">
+<body id="home">
+  <div class='wrapper'>
+    <header class="navbar nav navbar-expand-sm navbar-dark fixed-top">
+      <div class="container">
+        <a href="#home-section" class="navbar-brand h1">
+          money wise
+        </a>
+    </header>
+
+    <!--HOME SECTION-->
 
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 mx-auto">
-        <div class="card card-body text-center mt-5">
+    <div id="home-section">
+      <div class="dark-overlay">
+        <div class="home-inner">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 d-lg-block">
+                <h1> Moving your Business forward</h1>
+                <div class="d-flex flex-row align-content-center">
+                  <div class="p-2 align-self-start">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div class="p-3 align-self-end">
+                    <p>Grow your business</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                  <div class="p-2 align-self-start">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div class="p-3 align-self-end">
+                    <p> Control your spending</p>
+                  </div>
+                </div>
+                <div class="d-flex flex-row">
+                  <div class="p-2 align-self-start">
+                    <i class="fas fa-check"></i>
+                  </div>
+                  <div class="p-3 align-self-end">
+                    <p>Pay for what you need. No More.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card text-center card-form ">
+                  <div class="card-body">
+                    <h3>Get Started for free</h3>
+                    <form id="loan-form">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon">&#163;</span>
+                          <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
+                        </div>
+                      </div>
 
-          <img src="images/logo.png" alt="logo" class="display-5 pb-3 heading">
-          <form id="loan-form">
-            <div class="form-group">
-              <div class="input-group">
-                <span class="input-group-addon">&#163;</span>
-                <input type="number" class="form-control" id="amount" placeholder="Loan Amount">
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon">%</span>
+                          <input type="number" class="form-control" id="interest" placeholder="Interest">
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <input type="number" class="form-control" id="years" placeholder="Years To Repay">
+                      </div>
+                      <div class="form-group">
+                        <input type="submit" value="Calculate" class="btn btn-primary  btn-block">
+                      </div>
+                    </form>
+
+                    <!-- LOADER -->
+
+                    <div id="loading">
+                      <img src="images/loading.gif" alt="">
+                    </div>
+
+                    <!-- RESULTS -->
+                    <div id="results" class="pt-4">
+                      <h5>Results</h5>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon">Monthly Payment</span>
+                          <input type="number" class="form-control" id="monthly-payment" disabled>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon">Total Payment</span>
+                          <input type="number" class="form-control" id="total-payment" disabled>
+                        </div>
+                      </div>
+
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-addon">Total Interest</span>
+                          <input type="number" class="form-control" id="total-interest" disabled>
+                        </div>
+                      </div>
+
+                    </div><!-- end #results-->
+                  </div>
+                  <!--.card card-body text-center mt-5"-->
+
+                  <!--.col-md-6 mx-auto-->
+                </div>
+                <!--.row-->
+
               </div>
             </div>
-
-            <div class="form-group">
-              <div class="input-group">
-                <span class="input-group-addon">%</span>
-                <input type="number" class="form-control" id="interest" placeholder="Interest">
-              </div>
-            </div>
-
-            <div class="form-group">
-              <input type="number" class="form-control" id="years" placeholder="Years To Repay">
-            </div>
-            <div class="form-group">
-              <input type="submit" value="Calculate" class="btn btn-primary  btn-block">
-            </div>
-          </form>
-
-          <!-- LOADER -->
-
-          <div id="loading">
-            <img src="images/loading.gif" alt="">
           </div>
-
-          <!-- RESULTS -->
-          <div id="results" class="pt-4">
-            <h5>Results</h5>
-            <div class="form-group">
-              <div class="input-group">
-                <span class="input-group-addon">Monthly Payment</span>
-                <input type="number" class="form-control" id="monthly-payment" disabled>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="input-group">
-                <span class="input-group-addon">Total Payment</span>
-                <input type="number" class="form-control" id="total-payment" disabled>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="input-group">
-                <span class="input-group-addon">Total Interest</span>
-                <input type="number" class="form-control" id="total-interest" disabled>
-              </div>
-            </div>
-
-          </div><!-- end #results-->
         </div>
-        <!--.card card-body text-center mt-5"-->
       </div>
-      <!--.col-md-6 mx-auto-->
     </div>
-    <!--.row-->
-
   </div>
+
+
+
+
+
+
   <!--.container-->
-  <footer class="footer text-center">
+  <footer class=" footer
+      text-center">
     <a href="https://github.com/FarahMint" target="_blank">
       <i class="fab fa-github"></i></a>
     FarahMint with <i class="fas fa-heart"></i></footer>
@@ -111,6 +163,7 @@
     crossorigin="anonymous"></script>
 
   <script src="app.js"></script>
+
 </body>
 
 </html>

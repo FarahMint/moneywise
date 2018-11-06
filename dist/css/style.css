@@ -1,19 +1,68 @@
 body,
 html {
-  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 img {
   max-width: 100%;
   margin: 0 auto;
 }
-.container {
-  min-height: 100%;
+
+.wrapper {
+  min-height: calc(100vh - 70px);
+}
+.navbar {
+  opacity: 0.8;
+  background-color: #3a47d5;
+}
+.navbar-brand {
+  text-transform: uppercase;
+  font-size: 2rem;
 }
 
-.mt-5,
-.my-5 {
-  padding-bottom: 3rem;
+#home-section {
+  background: url("../images/home.jpeg");
+  min-height: 100vh;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+.dark-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  min-height: 100vh;
+}
+
+#home-section .home-inner {
+  padding-top: 150px;
+}
+.home-inner h1 {
+  font-size: 1.75rem;
+}
+#home-section .card-form {
+  opacity: 0.8;
+}
+
+#home-section .fas {
+  color: #3a47d5;
+  background: #fff;
+  padding: 0.75rem;
+  border-radius: 45px;
+  font-size: 2rem;
+}
+
+.card {
+  width: 100%;
+  border-radius: 21px 21px;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+  background-color: #fefefe;
+}
+
+.card-form {
+  background-color: #3a47d5;
+  border: 3px solid #444;
 }
 
 .alert-danger {
@@ -22,12 +71,12 @@ img {
 }
 
 .footer {
-  height: 40px;
+  height: 50px;
   line-height: 2;
   background-color: #ddd;
-  z-index: 1;
+  z-index: 1000;
   width: 100%;
-  margin: 0;
+
   text-align: center;
 }
 .fa-heart {
